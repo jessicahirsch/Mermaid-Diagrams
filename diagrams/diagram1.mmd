@@ -1,5 +1,9 @@
-graph LR
-    A --> B
-    B --> C
-    C --> D
-    D --> E
+---
+title: Feature Flags vs. Regression Tests
+---
+flowchart LR
+
+    A[/master regression tests\] --> C[/master regression tests\]
+    id1([master branch]) --> id3([master branch])
+    id2([feature branch]) --> id3([master branch])
+    B[\ft. regression tests/]
