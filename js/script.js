@@ -19,8 +19,10 @@ async function loadDiagram(id, path) {
 }
 
 async function loadAllDiagrams() {
-    await loadDiagram('diagram1', 'diagrams/diagram1.mmd');
-    await loadDiagram('diagram2', 'diagrams/diagram2.mmd');
+    const diagramId = document.querySelector('div[id^="diagram"]').id;
+    const diagramFile = `diagrams/${diagramId}.mmd`;
+    
+    await loadDiagram(diagramId, diagramFile);
     mermaid.init();
 }
 
