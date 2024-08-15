@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Diagrams</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <h1>
+        My Mermaid Diagrams
+    </h1>
+    <!-- Include any CSS file here if needed -->
 </head>
 <body>
     <div id="diagram1"></div>
 
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
-
-        async function loadDiagram(id, url) {
-            const response = await fetch(url);
-            const diagram = await response.text();
-            document.getElementById(id).innerHTML = `<div class="mermaid">${diagram}</div>`;
-            mermaid.init();
-        }
-
-        loadDiagram('diagram1', 'diagrams/diagram1.mmd');
-    </script>
+    <script type="module" src="js/script.js" defer></script>
 </body>
 </html>
