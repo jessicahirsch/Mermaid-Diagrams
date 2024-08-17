@@ -3,7 +3,8 @@ title: Feature Flags vs. Regression Tests
 ---
 flowchart LR
 
-    Z[Start]-->A[/master branch\]--regression tests-->B[/master branch\]-->E[/new master branch\]
+    Z[Start]-->A[/master branch\]--regression tests-->B[/master branch\]--regression tests-->E[/new master branch\]
+    A[/master branch\]-.->C[/feature branch\]
     subgraph feature-flag
     C[/feature branch\]-.write regression tests .->D[/feature branch\]
     D[/feature branch\]
