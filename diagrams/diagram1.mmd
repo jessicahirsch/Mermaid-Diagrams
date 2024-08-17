@@ -5,6 +5,6 @@ flowchart LR
 
     flowchart LR
 
-    A[/master branch\] --regression tests -->B[/master branch\]-->E[/new branch\]
-    C[/feature branch\] -.regression tests .->D[/feature branch\]
-    D[/feature branch\] -.combine tests .-> E[/new master branch\]
+    Z[Start]-->A[/master branch\]--regression tests-->B[/master branch\]-->E[/new master branch\]
+    C[/feature branch\]-.write regression tests .->D[/feature branch\]
+    D[/feature branch\]-.combine tests .->E[/new master branch\]
