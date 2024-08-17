@@ -3,7 +3,7 @@ flowchart LR
 %% Each phase is one line of code to promote small batches
 %% Two lines of code means smaller batches called for
 
-    Z[Start]-->A[/master branch\]
+    Y[Start]-->A[/master branch\]
 
     subgraph build-phase
     A[/master branch\]-->AB[/master branch\]
@@ -12,7 +12,7 @@ flowchart LR
     AB[/master branch\]--regression tests-->B[/master branch\]
 
     %% Feature branch is forked from master
-    A[/master branch\]-.->C[/feature branch\]
+    A[/master branch\]-.create feature flag.->C[/feature branch\]
 
     %% Feature developement begins behind flag
     subgraph feature-flag
@@ -31,6 +31,9 @@ flowchart LR
     %% Post-experiment cleanup phase
     subgraph cleanup-phase
     D[/feature branch\]-->F[/feature branch\]
+    F[/feature branch\]
     end cleanup-phase
+
+    F[/feature branch\]-.delete feature flag.->Z[End]
 
     style F fill:#000,stroke:#f00,stroke-width:4px,color:#f00,stroke-dasharray: 5 5
