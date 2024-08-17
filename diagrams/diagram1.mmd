@@ -6,10 +6,10 @@ flowchart LR
     Z[Start]-->A[/master branch\]
 
     subgraph build-phase
-    A[/master branch\]-->H[/master branch\]
+    A[/master branch\]-->AB[/master branch\]
 
     %% Begin top line build phase
-    H[/master branch\]--regression tests-->B[/master branch\]
+    AB[/master branch\]--regression tests-->B[/master branch\]
 
     %% Feature branch is forked from master
     A[/master branch\]-.->C[/feature branch\]
