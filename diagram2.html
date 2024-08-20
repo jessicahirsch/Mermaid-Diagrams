@@ -6,9 +6,14 @@
     <title>PagerDuty Flowchart</title>
 </head>
 <body>
-    <h1>PagerDuty Flowchart</h1>
+    <!-- <h1>PagerDuty Flowchart</h1> -->
+    <div>
+        <a href="/" class="back-button">< Back</a>
+    </div>
     <div id="diagram2"></div>
     <img src="/css/images/coming_soon.png"></img>
-    <script type="module" src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer>
+        document.querySelector('.back-button').href = window.location.origin + '/';
+    </script>
 </body>
 </html>

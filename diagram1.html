@@ -7,7 +7,10 @@
     <link rel="icon" href="/css/images/feature-flag.png" type="image/x-icon" alt="feature-flag">
 </head>
 <body>
+    <a href="/" class="back-button">< Back</a>
     <div id="diagram1"></div>
-    <script type="module" src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer>
+        document.querySelector('.back-button').href = window.location.origin + '/';
+    </script>
 </body>
 </html>
