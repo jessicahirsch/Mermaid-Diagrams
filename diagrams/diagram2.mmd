@@ -3,3 +3,16 @@ title: PagerDuty Flowchart
 ---
 flowchart TD
 
+subgraph Observability
+    A(terraform)
+end
+
+subgraph All Incident Types
+    subgraph Datadog Monitoring
+        B(sythentic tests)
+        A(terraform)-->C(monitors)
+    end
+end
+
+%% style A fill:#f9f,stroke:#333,stroke-width:4px
+%% style Observability font-weight:bold
