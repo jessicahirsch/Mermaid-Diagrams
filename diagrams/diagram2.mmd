@@ -22,6 +22,13 @@ E(custom incident)-->G(Events API V2)
 F(looker)-->G(Events API 2)
 
 G(Events API V2)-->H(PagerDuty New Incident)-->M(Slack)
+H(PagerDuty New Incident)-->N(Service)
+N(Service)-->O(Escalation Policy)
+O(Escalation Policy)-.->P(Team)
+O(Escalation Policy)-->Q(Schedule)
+Q(Schedule)-->R(User)
+A(terraform)-.->N(Service)
+A(terraform)-.->O(Escalation Policy)
 
 subgraph Ruleset
     I(payload rules)
