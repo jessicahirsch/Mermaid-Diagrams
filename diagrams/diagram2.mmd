@@ -25,6 +25,8 @@ G(Events API V2)-->H(PagerDuty New Incident)
 
 subgraph Ruleset
     I(payload rules)
+    B(sythentic tests)-->J(event rules)
+    C(monitors)-->J(event rules)
     D(andon)-->J(event rules)
 end
 
