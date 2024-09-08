@@ -18,8 +18,8 @@ subgraph All Incident Types
     F(looker)
 end
 
-E(custom incident)-->G(Events API V2)
-F(looker)-->G(Events API 2)
+E(custom incident)-->G(events API V2)
+F(looker)-->G(events API 2)
 
 G(Events API V2)-->H(PagerDuty New Incident)-->M(Slack)
 J(event rules)-->H(PagerDuty New Incident)
