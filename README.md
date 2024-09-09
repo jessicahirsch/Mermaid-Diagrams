@@ -1,3 +1,7 @@
-## Writing my Systems Diagrams to MermaidJS
+## Writing my Systems Diagrams in MermaidJS
 
-My systems diagrams have lived in Miro. I will code them into deployable versions in this project.
+Coding my systems diagrams.
+
+## Run
+
+Run using `http-server`.
