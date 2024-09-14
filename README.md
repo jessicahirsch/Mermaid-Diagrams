@@ -4,4 +4,4 @@ Coding my systems diagrams.
 
 ## Run
 
-Run using `http-server`.
+Run using `http-server` in the root directory.
