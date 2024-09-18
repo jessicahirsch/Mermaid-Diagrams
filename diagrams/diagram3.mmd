@@ -7,7 +7,8 @@ flowchart TD
 id1((start))-->A(Backlog Refinement)
 A(Backlog Refinement)-->B(Sprint Planning)
 
-B(Sprint Planning)-->id2>Wednesday]
+id2>Wednesday]
+B(Sprint Planning)
 
 B(Sprint Planning)-->id3{break}
 
@@ -16,5 +17,11 @@ id3{break}-->D(Mob Programming - unit)-->F(Mob Programming - integration)
 id3{break}-->E(Mob Programming - automation)
 
 D(Mob Programming - unit)-->id4{break}
-E(Mob Programming - automation)-->id4{break}
+E(Mob Programming - automation)-->|automation is run to identify flow blockers|id4{break}
 F(Mob Programming - integration)-->id4{break}
+
+id4{break}-->G(QA - flow blockers)
+
+X(SERVICE
+BASED
+RELEASE)
