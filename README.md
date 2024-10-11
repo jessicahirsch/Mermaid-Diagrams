@@ -1,6 +1,6 @@
 ## Writing my Systems Diagrams in MermaidJS
 
-Coding my systems diagrams.
+Coding my systems diagrams. Originally published in plain text.
 
 ## Run
 
